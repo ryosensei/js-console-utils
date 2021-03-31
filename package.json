@@ -1,0 +1,19 @@
+{
+  "name": "@cruxpool/console",
+  "version": "1.0.0",
+  "description": "Console utils",
+  "main": "console.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.cruxpool.com:utils/js/console.git"
+  },
+  "author": "Marc VARLET",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^1.26.0",
+    "terminal-kit": "^2.0.7"
+  }
+}
