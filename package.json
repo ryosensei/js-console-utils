@@ -1,6 +1,6 @@
 {
   "name": "@ryosensei/console",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Console utils",
   "main": "console.js",
   "scripts": {
