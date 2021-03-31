@@ -1,5 +1,5 @@
 {
-  "name": "@cruxpool/console",
+  "name": "@ryosensei/console",
   "version": "1.0.0",
   "description": "Console utils",
   "main": "console.js",
@@ -8,12 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.cruxpool.com:utils/js/console.git"
+    "url": "git+ssh://git@github.com/ryosensei/js-console-utils.git"
   },
-  "author": "Marc VARLET",
+  "author": "Marc VARLET <marc@saebaweb.com>",
   "license": "ISC",
   "dependencies": {
     "luxon": "^1.26.0",
     "terminal-kit": "^2.0.7"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ryosensei/js-console-utils/issues"
+  },
+  "homepage": "https://github.com/ryosensei/js-console-utils#readme",
+  "devDependencies": {}
 }

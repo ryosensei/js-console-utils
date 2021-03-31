@@ -1,11 +1,13 @@
-const term         = require('term').terminal;
+const term         = require('terminal-kit').terminal;
 const VERBOSE      = require('./arguments');
 const { DateTime } = require('luxon');
 
-const log = (txt, color = 'white', level = 0, length = null) => {
+const log = (txt, color = 'white', level = 0, length = null, fillWith = " ", showDate = true) => {
     if (VERBOSE >= level) {
         let now = DateTime.now().toFormat("HH:mm:ss");
-        term[color](`[${now}] `);
+        if (showDate) {
+            term[color](`[${now}] `);
+        }
         if (length !== null) {
             if (txt.length < length - 1) {
                 do {
@@ -19,6 +21,8 @@ const log = (txt, color = 'white', level = 0, length = null) => {
         }
         term[color](txt);
     }
+
+    return true;
 }
 
 exports.log = log;
